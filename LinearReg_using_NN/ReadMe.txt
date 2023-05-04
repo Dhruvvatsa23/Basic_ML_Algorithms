@@ -1,0 +1,5 @@
+This dataset contains information collected by the U.S. Census Service concerning housing in Boston, MA. The dataset contains 14 unique attributes, among which is the median value (price in $K) of a home for a given suburb. We will use this dataset as an example of how to develop a model that allows us to predict the median price of a home based on a single attribute in the dataset (average number of rooms in a house).
+
+Keras provides the load_data() function to load this dataset. Datasets are typically partitioned into train, and test components and the load_data() function returns a tuple for each. Each tuple contains a 2-dimensional array of features (e.g., X_train) and a vector that contains the associated target values for each sample in the dataset (e.g., y_train). So, for example, the rows in X_train represent the various samples in the dataset, and the columns represent the various features. 
+
+We will only use the training data to demonstrate how to train a model. However, in practice, it is very important to use the test data to see how well the trained model performs on unseen data.
